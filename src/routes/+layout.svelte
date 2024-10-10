@@ -1,6 +1,34 @@
 <script>
     import '../app.css';
-  </script>
-  
-  <slot />
+    import { page } from '$app/stores';
+    import Header from '../lib/Header.svelte';
+    import Footer from '../lib/Footer.svelte';
+
+    $: title = $page.data?.title || 'Trayectoria profesional';
+</script>
+
+<div class="container-pers">
+    <Header {title}/>
+
+    <main class="main">
+        <slot />
+    </main>
+
+    <Footer />
+</div>
+
+<style>
+    .container-pers{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .main{
+        flex: 1;
+    }
+
+</style>
+
+
   

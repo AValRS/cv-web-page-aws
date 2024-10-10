@@ -1,10 +1,25 @@
 <script>
+    import { fade } from "svelte/transition";
     export let title;
+
+    let previousTitle;
+    let animate = true;
+    $: {
+        if(previousTitle !== title){
+            previousTitle = title;
+            animate = false;
+        }
+        setTimeout(() => {
+            animate = true;
+        }, 300);
+    }
 </script>
 
 <header class="header flex items-center justify-between h-12 font-light">
-    <div class="w-1/5">
-        <h1 class="px-4">{title}</h1>
+    <div class="w-1/5 flex items-center">
+        {#if animate}
+            <h1 class="px-4" transition:fade={{ duration: 300 }}>{title}</h1>
+        {/if}
     </div>
     <nav class="flex h-full w-3/5 justify-center">
         <a class="button px-4" href="/">Inicio</a>

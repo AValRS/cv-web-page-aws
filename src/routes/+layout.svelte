@@ -4,7 +4,7 @@
     import Header from '../lib/Header.svelte';
     import Footer from '../lib/Footer.svelte';
 
-    $: title = $page.data?.title || 'Inicio';
+    $: title = $page.data?.title || '';
 </script>
 
 <div class="container-pers">

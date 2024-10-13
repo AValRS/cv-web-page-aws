@@ -10,7 +10,7 @@
 <div class="container-pers">
     <Header {title}/>
 
-    <main class="main">
+    <main class="main flex">
         <slot />
     </main>
 

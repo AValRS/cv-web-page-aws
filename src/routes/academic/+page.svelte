@@ -1,20 +1,8 @@
 <script>
-    import { fly } from 'svelte/transition';
     import AcademicCard from '../../lib/AcademicCard.svelte';
-	let visible_t1 = false;
-	let visible_t2 = false;
-    
-    setTimeout(() => {
-        visible_t1 = true;
-    }, 500);
-
-    setTimeout(() => {
-        visible_t2 = true;
-    }, 700);
-
 </script>
 
-<div class="m-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+<div class="m-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 w-full">
     <div class="flex lg:justify-end">
         <AcademicCard 
             title="Bachillerato" 

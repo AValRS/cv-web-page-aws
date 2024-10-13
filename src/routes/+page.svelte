@@ -7,7 +7,7 @@
 </script>
 <div class="text-center mx-20 2xl:mx-40">
     {#if visible}
-        <h1 class="main-text mt-20 2xl:mt-48" transition:fade={{duration:500}}>
+        <h1 class="main-text mt-20 2xl:mt-44" transition:fade={{duration:500}}>
             Explora mi trayectoria profesional, donde la 
             <span class="colored-text">tecnología</span>, la 
             <span class="colored-text">innovación</span> y la 

@@ -8,7 +8,7 @@
 <div class="text-center m-4 md:m-12 2xl:m-22 w-full">
     {#if visible}
         <div class="flex w-full">
-            <h1 class="main-text md:mt-20 2xl:mt-44" transition:fade={{duration:500}}>
+            <h1 class="main-text mt-20 2xl:mt-48" transition:fade={{duration:500}}>
                 Explora mi trayectoria profesional, donde la 
                 <span class="colored-text">tecnología</span>, la 
                 <span class="colored-text">innovación</span> y la 
@@ -32,7 +32,6 @@
 .main-text{
     font-weight: 300;
     font-size: 2.75rem;
-    margin-top: 5rem;
 }
 
 .secondary-text{

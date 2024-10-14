@@ -25,7 +25,7 @@
                 "Manipulación de CSS3, HTML5 y JavaScript.",
                 "Familiaridad y experiencia en frameworks CSS como Bootstrap, Tailwind, Vuetify, Quasar y Flowbite Svelte."
             ],
-            urlImg: "/experience/develop2.webp"
+            urlImg: "/experience/develop.webp"
         },
         {
             title: "Servidores",

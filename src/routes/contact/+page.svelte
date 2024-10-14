@@ -23,11 +23,11 @@
 
 <style>
 .card {
-  width: 300px;
-  height: 400px;
+  width: 18.75rem;
+  height: 25rem;
   background: #1f1f1f;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-right-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
 }
 
 .title {

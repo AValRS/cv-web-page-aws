@@ -58,7 +58,7 @@
 <style>
     .separator{
         width: 100%;
-        min-height: 1px;
+        min-height: 0.0625rem;
         background-color: #dbdbdb;
         margin-top: 1rem;
         margin-bottom: 1rem;

@@ -31,8 +31,8 @@
 <style>
 .main-text{
     font-weight: 300;
-    font-size: 44px;
-    margin-top: 80px;
+    font-size: 2.75rem;
+    margin-top: 5rem;
 }
 
 .secondary-text{
@@ -68,7 +68,7 @@
     padding-left: 1.875rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .main-text{
         font-weight: 300;
         font-size: 1.625rem;

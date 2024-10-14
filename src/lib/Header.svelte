@@ -23,13 +23,13 @@
             {/if}
         </div>
     </div>
-    <nav class="flex h-full w-3/5 justify-center">
+    <nav class="hidden md:flex h-full w-3/5 justify-center">
         <a class="left-c button px-4" href="/">Inicio</a>
         <a class="button px-4" href="/experience">Experiencia</a>
         <a class="button px-4" href="/academic">Educación</a>
         <a class="right-c button px-4" href="/hobbies">Pasatiempos</a>
     </nav>
-    <div class="flex h-full w-1/5 justify-end">
+    <div class="hidden h-full w-1/5 justify-end md:flex">
         <a class="contact-button px-4 transition-transform transform hover:scale-105 will-change-transform" href="/contact">Contacto</a>
     </div>
 </header>

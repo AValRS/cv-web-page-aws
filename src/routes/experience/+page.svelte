@@ -25,7 +25,7 @@
                 "Manipulación de CSS3, HTML5 y JavaScript.",
                 "Familiaridad y experiencia en frameworks CSS como Bootstrap, Tailwind, Vuetify, Quasar y Flowbite Svelte."
             ],
-            urlImg: "/experience/develop.webp"
+            imgUrl: "/experience/develop.webp"
         },
         {
             title: "Servidores",
@@ -34,7 +34,7 @@
                 "Experiencia con websockets y colas de trabajo",
                 "Gestión de certificados SSL/TLS"
             ],
-            urlImg: "/experience/servers.webp"
+            imgUrl: "/experience/servers.webp"
         }
     ]
 
@@ -48,7 +48,7 @@
     <h3 class="mt-4 text-2xl font-medium">Habilidades técnicas</h3>
     <div class="mt-6">
         {#each technicalSkills as element}
-            <AbilitySection title={element.title} abilities={element.abilities} urlImg={element.urlImg}/>
+            <AbilitySection title={element.title} abilities={element.abilities} imgUrl={element.imgUrl}/>
             <div class="separator"></div>
         {/each}
     </div>

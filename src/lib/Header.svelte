@@ -1,4 +1,5 @@
 <script>
+    import { onMount, onDestroy } from 'svelte';
     import { fade } from "svelte/transition";
     export let title;
 
@@ -21,16 +22,21 @@
         isOpen = !isOpen;
     }
 
-    function handleClickOutside(event) {
-        const menuElement = document.querySelector('.menu');
-        const buttonElement = event.target.closest('button');
 
-        if (menuElement && !menuElement.contains(event.target) && !buttonElement) {
-            isOpen = false;
+    function handleClickOutside(event) {
+        if (typeof document !== 'undefined') {
+            const menuElement = document.querySelector('.menu');
+            const buttonElement = event.target.closest('button');
+
+            if (menuElement && !menuElement.contains(event.target) && !buttonElement) {
+                isOpen = false;
+            }
         }
     }
 
-    document.addEventListener('click', handleClickOutside);
+    if (typeof document !== 'undefined') {
+        document.addEventListener('click', handleClickOutside);
+    }
 </script>
 
 <header class="header flex items-center justify-between h-12">

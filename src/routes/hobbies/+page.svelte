@@ -23,14 +23,14 @@
         }
     ];
 </script>
-<div class="grid grid-cols-3 m-8 w-full">
-    <div class="card-container col-span-3 md:col-span-1 m-4 md:m-6 lg:m-8" data-aos="fade-up" data-aos-duration="1000">
+<div class="grid grid-cols-3 m-8 w-full 2xl:mx-20">
+    <div class="card-container col-span-3 md:col-span-1 m-4 md:m-6 lg:m-8 2xl:my-24" data-aos="fade-up" data-aos-duration="1000">
         <HobbieCard title={hobbies[0].title} description={hobbies[0].description} imgUrl={hobbies[0].imgUrl}/>
     </div>
-    <div class="card-container col-span-3 md:col-span-1 m-4 md:m-6 lg:m-8" data-aos="fade-up" data-aos-duration="1200">
+    <div class="card-container col-span-3 md:col-span-1 m-4 md:m-6 lg:m-8 2xl:my-24" data-aos="fade-up" data-aos-duration="1200">
         <HobbieCard title={hobbies[1].title} description={hobbies[1].description} imgUrl={hobbies[1].imgUrl}/>
     </div>
-    <div class="card-container col-span-3 md:col-span-1 m-4 md:m-6 lg:m-8" data-aos="fade-up" data-aos-duration="1400">
+    <div class="card-container col-span-3 md:col-span-1 m-4 md:m-6 lg:m-8 2xl:my-24" data-aos="fade-up" data-aos-duration="1400">
         <HobbieCard title={hobbies[2].title} description={hobbies[2].description} imgUrl={hobbies[2].imgUrl}/>
     </div>
 </div>

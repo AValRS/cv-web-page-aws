@@ -6,7 +6,7 @@
 
 <div class="card rounded-lg shadow-lg h-full transition-transform transform hover:scale-105 will-change-transform">
     <img class="img h-60 object-cover w-full rounded-t-lg" src={imgUrl} alt={`imagen relacionada con ${title}`}>
-    <div class="m-4">
+    <div class="m-4 2xl:m-8">
         <h5 class="mb-2 text-2xl font-medium">{title}</h5>
         <p class="secondary-text font-normal pb-6 text-justify">
             {description}

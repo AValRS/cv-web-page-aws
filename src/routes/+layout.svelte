@@ -1,16 +1,22 @@
 <script>
     import '../app.css';
     import { page } from '$app/stores';
+    import { onMount } from 'svelte';
+    import AOS from 'aos';
+    import 'aos/dist/aos.css';
     import Header from '../lib/Header.svelte';
     import Footer from '../lib/Footer.svelte';
 
-    $: title = $page.data?.title || 'Inicio';
+    onMount(() => {
+        AOS.init();
+    });
+    $: title = $page.data?.title || '';
 </script>
 
 <div class="container-pers">
     <Header {title}/>
 
-    <main class="main">
+    <main class="main flex">
         <slot />
     </main>
 

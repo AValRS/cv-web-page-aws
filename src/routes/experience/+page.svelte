@@ -45,7 +45,7 @@
         <ExperienceSection title={element.title} enterprise={element.enterprise} years={element.years} functions={element.functions}/>
     {/each}
     
-    <h3 class="mt-4 text-2xl font-medium">Habilidades técnicas</h3>
+    <h3 class="mt-4 text-2xl font-medium" data-aos="fade" data-aos-duration="1000">Habilidades técnicas</h3>
     <div class="mt-6">
         {#each technicalSkills as element}
             <AbilitySection title={element.title} abilities={element.abilities} imgUrl={element.imgUrl}/>

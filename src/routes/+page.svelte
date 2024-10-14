@@ -3,7 +3,7 @@
     let visible = false;
     setTimeout(() => {
         visible = true;
-    }, 500);
+    }, 400);
 </script>
 <div class="text-center mx-20 2xl:mx-40">
     {#if visible}

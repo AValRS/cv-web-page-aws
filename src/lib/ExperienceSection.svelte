@@ -4,7 +4,7 @@
     export let years;
     export let functions;
 </script>
-<div>
+<div data-aos="fade" data-aos-duration="1000">
     <h3 class="text-2xl font-medium">{ title }</h3>
     <div>
         <div class="flex items-center gap-2">

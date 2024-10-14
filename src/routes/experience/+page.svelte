@@ -25,7 +25,7 @@
                 "Manipulación de CSS3, HTML5 y JavaScript.",
                 "Familiaridad y experiencia en frameworks CSS como Bootstrap, Tailwind, Vuetify, Quasar y Flowbite Svelte."
             ],
-            urlImg: "/experience/develop.webp"
+            imgUrl: "/experience/develop.webp"
         },
         {
             title: "Servidores",
@@ -34,7 +34,7 @@
                 "Experiencia con websockets y colas de trabajo",
                 "Gestión de certificados SSL/TLS"
             ],
-            urlImg: "/experience/servers.webp"
+            imgUrl: "/experience/servers.webp"
         }
     ]
 
@@ -45,10 +45,10 @@
         <ExperienceSection title={element.title} enterprise={element.enterprise} years={element.years} functions={element.functions}/>
     {/each}
     
-    <h3 class="mt-4 text-2xl font-medium">Habilidades técnicas</h3>
+    <h3 class="mt-4 text-2xl font-medium" data-aos="fade" data-aos-duration="1000">Habilidades técnicas</h3>
     <div class="mt-6">
         {#each technicalSkills as element}
-            <AbilitySection title={element.title} abilities={element.abilities} urlImg={element.urlImg}/>
+            <AbilitySection title={element.title} abilities={element.abilities} imgUrl={element.imgUrl}/>
             <div class="separator"></div>
         {/each}
     </div>
@@ -58,7 +58,7 @@
 <style>
     .separator{
         width: 100%;
-        min-height: 1px;
+        min-height: 0.0625rem;
         background-color: #dbdbdb;
         margin-top: 1rem;
         margin-bottom: 1rem;
